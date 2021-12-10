@@ -9,6 +9,10 @@ before_install:
 install:
   - pip install -r requirements.txt
 
+addons:
+  sonarcloud:
+    organization: "usil-orgs"
+
 script:
   - pytest
   - behave ./test_aceptance/
